@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry's Portfolio</title>
+     <link rel="stylesheet" href="./public/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Jjmr8Gp6KO4jstWqyL6QgzN2bp0yMOxDMgVM27HdvpBtDS/B3VD6JbaU3XjWSqJ9Rssao+CA9Z9YaBf1CGppbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+    <a class="navbar-brand" href="#">Terry's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./public/about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./public/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#github-projects-list">Projects</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Add background between title and navigation bar -->
+<div class="title-navbar-bg">
+    <div class="container">
+        <h1 class="mt-5">Terry Tan's Portfolio</h1>
+    </div>
+</div>
+
+<!-- Add background between photo and "I'm a Web Developer" text -->
+<div class="photo-section">
+    <div class="container">
+        <div class="mt-3">
+            <img src="./assets/IMG_0216.JPG" class="img-fluid mx-auto d-block" alt="Terry Tan">
+            <h3>I'm a Web Developer</h3>
+            <button class="btn btn-outline-secondary btn-lg" onclick="scrollToContact()">Tell Me More!</button>
+        </div>
+    </div>
+</div>
+
+<!-- Add three-column section here -->
+<div class="container features">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">1. FullStack Developer</h3>
+            <img src="./assets/2620307.png" class="img-fluid">
+            <p>I possess extensive knowledge and skills covering frontend, backend, and database aspects. Can utilize various programming languages (e.g., HTML, CSS, JavaScript, Python, Ruby), frameworks (e.g., React, Angular, Vue.js, Node.js), and tools (e.g., Git, Webpack, npm) to build robust and user-friendly web applications.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">2. Creativity and Design Aptitude</h3>
+            <img src="./assets/designer.png" class="img-fluid">
+            <p>I'm not just coders but also contributors to website or web application design. Good aesthetic sense and design abilities to create appealing user interfaces (UI) and enhance user experience (UX), thus improving user satisfaction and engagement.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- Add Contact Section -->
+            <div id="contact-section">
+                <div class="container">
+                    <h3>Contact Me</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of three-column section -->
+<hr />
+
+<!-- Add background for project show -->
+<div class="background">
+    <div class="container project-show">
+        <div class="row">
+            <!-- Project Card 1 -->
+            <div class="card col-lg-3 col-md-3 col-sm-4 text-center">
+                <img class="card-img-top rounded-circle" src="./assets/robert.jpeg" alt="Robert Project Image">
+                <div class="card-body">
+                    <h4 class="card-title"><a href="https://github.com/TerryTxx/robot-gallery-Cart" target="_blank">Robert Library</a></h4>
+                    <p class="card-text">Html/Css</p>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="card col-lg-3 col-md-3 col-sm-4 text-center">
+                <img class="card-img-top rounded-circle" src="./assets/business.jpeg" alt="Business Project Image">
+                <div class="card-body">
+                    <h4 class="card-title"><a href="https://github.com/TerryTxx/customer_management" target="_blank">Customer Management</a></h4>
+                    <p class="card-text">Fullstack by nodejs</p>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="card col-lg-3 col-md-3 col-sm-4 text-center">
+                <img class="card-img-top rounded-circle" src="./assets/green-life-hands-18728863.webp" alt="GreenLife Project Image">
+                <div class="card-body">
+                    <h4 class="card-title"><a href="https://github.com/TerryTxx/GreenTrack--LifeAPP" target="_blank">GreenLife App--React</a></h4>
+                    <p class="card-text">Reactjs--Mobile for OS and Androd</p>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="card col-lg-3 col-md-3 col-sm-4 text-center">
+                <img class="card-img-top rounded-circle" src="./assets/tank.jpg" alt="TankGame Project Image">
+                <div class="card-body">
+                    <h4 class="card-title"><a href="https://github.com/TerryTxx/TankGame02" target="_blank">TankGame</a></h4>
+                    <p class="card-text">Java OOP Program</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detail List Button -->
+<button class="btn btn-pink btn-lg detail-list-btn" onclick="toggleProjectList()">Detail List</button>
+
+
+<div class="container">
+    <div id="project-list" class="container mb-5" style="display: none;">
+        <h3>Project List</h3>
+        <!-- List of projects -->
+        <ul class="list-group" id="github-projects-list">
+            <!-- Placeholder for GitHub repositories -->
+        </ul>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tan-xiaoxu-138b04252" target="_blank">LinkedIn</a></p>
+                <p><i class="fab fa-leetcode"></i> <a href="https://leetcode.com/XiaoxuTan/" target="_blank">LeetCode</a></p>
+                <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/YourFacebookPage" target="_blank">Facebook</a></p>
+                <p><i class="fab fa-twitter"></i> <a href="https://twitter.com/YourTwitterPage" target="_blank">Twitter</a></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p><strong>Tel:</strong> +353 1234567</p>
+                <p><strong>Email:</strong> terry.xiaoxu.tan@gmail.com</p>
+                <p><strong>Address:</strong><br />
+                    Maynooth University<br />
+                    Kildare<br />
+                    Dublin<br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center">© 2024 Copyright: YourWebsite.com</div>
+</footer>
+
+<hr>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function scrollToContact() {
+        document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleProjectList() {
+        var projectList = document.getElementById('project-list');
+        projectList.style.display = projectList.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Use Fetch API to get GitHub projects
+    fetch('https://api.github.com/users/TerryTxx/repos')
+        .then(response => response.json())
+        .then(data => {
+            const projectsContainer = document.getElementById('github-projects-list');
+            if (data && data.length > 0) {
+                data.forEach(repo => {
+                    const repoElement = document.createElement('li');
+                    repoElement.className = 'list-group-item';
+                    repoElement.innerHTML = '<a href="' + repo.html_url + '" target="_blank">' + repo.name + '</a>';
+                    projectsContainer.appendChild(repoElement);
+                });
+            } else {
+                projectsContainer.innerHTML = '<li class="list-group-item">No projects found.</li>';
+            }
+        })
+        .catch(error => console.log('Error fetching GitHub projects:', error));
+</script>
+
+</body>
+</html>

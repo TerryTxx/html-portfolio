@@ -1,0 +1,179 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background: #ADD8E6;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.github-repos {
+    margin-top: 20px;
+}
+img {
+    height: 288px; /* 144 * 2 for higher resolution */
+    width: 216px; /* 108 * 2 for higher resolution */
+    border: 5px solid #0d3b66; /* deep blue border */
+    margin-bottom: 20px;
+}
+h1 {
+    margin-bottom: 0.5em;
+    color: #0d3b66; /* dark blue */
+}
+h3 {
+    margin-top: 0.5em;
+    color: rosybrown; /* dark text */
+}
+
+
+/* Tell Me More button */
+.photo-section .btn {
+    margin-top: 20px;
+}
+
+/* Tell Me More button hover */
+.photo-section .btn:hover {
+    background-color: #ADD8E6;
+    border: 1px solid #007bff;
+    color: plum;
+}
+
+.description button {
+    border: 1px solid #0d3b66;
+    background: #0d3b66;
+    border-radius: 0;
+    color: #fff;
+}
+
+.description button:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
+}
+
+/* Add background between title and navigation bar */
+.title-navbar-bg {
+    background-image: url('../assets/raidecu01_2.webp'); /* Use background image */
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    text-align: center; /* Center title text */
+}
+/* Correct title style */
+.title-navbar-bg h1 {
+    color: #0d3b66; /* Set the title color to dark blue */
+}
+/* Add background between photo and "I'm a Web Developer" text */
+.photo-section {
+    background-image: url('../assets/IMG_7892.jpeg'); /* Use background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Set padding to ensure background is visible */
+}
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+.background {
+    background-color: #ffc0cb; /* 粉红色背景 */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.project-show {
+    margin-top: 20px; /* 提高项目展示区域的顶部间距，使其与按钮有一定的间隙 */
+}
+
+.detail-list-btn {
+    margin-top: 20px; /* 为按钮添加顶部间距，使其与项目展示区域有一定的间隙 */
+    margin-bottom: 20px; /* 为按钮添加底部间距，与下面的内容有一定的间隙 */
+    margin-left: 20px; /* 左边距，使按钮靠左对齐 */
+    background-color: pink; /* 粉红色背景 */
+    border-color: pink; /* 粉红色边框 */
+    color: white; /* 白色文字 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+.detail-list-btn:hover {
+    background-color: #ff1493; /* 鼠标悬停时，按钮背景颜色变为深粉色 */
+    border-color: #ff1493; /* 鼠标悬停时，按钮边框颜色变为深粉色 */
+}
+
+/* 更具体的选择器 */
+.btn.btn-pink.detail-list-btn {
+    background-color: pink;
+    border-color: pink;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn.btn-pink.detail-list-btn:hover {
+    background-color: #0d3b66;
+    border-color: #ff1493;
+}
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
+}
+
+
+
+
